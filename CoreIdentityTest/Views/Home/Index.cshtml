@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <ul class="navbar-nav ml-auto">
+        @*If the user is signed-in display Logout link*@
+
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="home" asp-action="Details">
+                Details
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="home" asp-action="Create">
+                Create
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="home" asp-action="Edit">
+                Edit
+            </a>
+        </li>
+    </ul>
+</div>
